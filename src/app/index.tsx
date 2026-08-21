@@ -1,3 +1,4 @@
+import { CardProgress } from "@/components/CardProgress";
 import { FloatingActionButton, Host, Icon } from "@expo/ui/jetpack-compose";
 import { StyleSheet, Text, View } from "react-native";
 
@@ -7,7 +8,6 @@ export default function Home(){
       <View>
         <Text>TaskDo</Text>
       </View>
-      <Text>Adicionar tarefas</Text>
       <Host matchContents>
         <FloatingActionButton>
           <FloatingActionButton.Icon>
@@ -15,7 +15,7 @@ export default function Home(){
           </FloatingActionButton.Icon>
         </FloatingActionButton>
       </Host>
-      
+      <CardProgress />
     </View>
   )
 }
